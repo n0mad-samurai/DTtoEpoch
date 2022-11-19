@@ -48,6 +48,9 @@ except Exception as err:
 # display the results
 # replace object date-time with epoch in milliseconds
 print('\nYour date-time input was:', yourDateTime, 'UTC')
+# use this formula
+print('The Unix epoch is:', int((timeData - datetime(1970, 1, 1)).total_seconds() * 1000))
+# or use this alternate formula
 # ensure the timezone is UTC for the epoch display
-print('The Unix epoch is:', timeData.replace(tzinfo=timezone.utc).timestamp() * 1000)
+# print('The Unix epoch is:', timeData.replace(tzinfo=timezone.utc).timestamp() * 1000)
 
