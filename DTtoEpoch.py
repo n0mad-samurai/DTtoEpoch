@@ -35,7 +35,7 @@ print('Provide your date and time in UTC')
 print('using this format: 2014-01-26 23:44:15')
 
 # assign input to object
-yourDateTime = (input('Enter your date-time:\n'))
+yourDateTime = (input('Enter your UTC date-time:\n'))
 
 # strip data from user input
 # assign data to another object
@@ -47,7 +47,7 @@ except Exception as err:
 
 # display the results
 # replace object date-time with Epoch in milliseconds
-print('\nYour date-time input is:', yourDateTime)
+print('\nYour date-time input was:', yourDateTime, 'UTC')
 # ensure the timezone is UTC for the Epoch display
-print('The Epoch in ms is:', timeData.replace(tzinfo=timezone.utc).timestamp() * 1000)
+print('The Unix Epoch is:', timeData.replace(tzinfo=timezone.utc).timestamp() * 1000)
 
