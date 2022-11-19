@@ -12,7 +12,9 @@ database browser does not convert
 the timestamp.
 
 Provide your date and time in UTC
-using this format: 2014-01-26 23:44:15
+using this numerical format: 2014-01-26 23:44:15
+year-month-day hours:minutes:seconds (24 hour format)
+
 
 Use the website:
 https://currentmillis.com/
