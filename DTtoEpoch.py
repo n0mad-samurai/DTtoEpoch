@@ -30,7 +30,7 @@ from datetime import datetime, timezone
 import sys
 
 # display instructions
-print('This is the Date-Time to Epoch millisecond converter.')
+print('This is the Date-Time to Unix epoch converter.')
 print('Provide your date and time in UTC')
 print('using this format: 2014-01-26 23:44:15')
 
@@ -46,8 +46,8 @@ except Exception as err:
     sys.exit('There is an error with your input -\n ' + str(err))
 
 # display the results
-# replace object date-time with Epoch in milliseconds
+# replace object date-time with epoch in milliseconds
 print('\nYour date-time input was:', yourDateTime, 'UTC')
-# ensure the timezone is UTC for the Epoch display
-print('The Unix Epoch is:', timeData.replace(tzinfo=timezone.utc).timestamp() * 1000)
+# ensure the timezone is UTC for the epoch display
+print('The Unix epoch is:', timeData.replace(tzinfo=timezone.utc).timestamp() * 1000)
 
