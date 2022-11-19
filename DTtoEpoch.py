@@ -32,7 +32,7 @@ import sys
 # display instructions
 print('This is the Date-Time to Unix epoch converter.')
 print('Provide your date and time in UTC')
-print('using this format: 2014-01-26 23:44:15')
+print('using this format: 2014-01-26 23:44:15.380')
 
 # assign input to object
 yourDateTime = (input('Enter your UTC date-time:\n'))
@@ -41,7 +41,7 @@ yourDateTime = (input('Enter your UTC date-time:\n'))
 # assign data to another object
 # catch errors with input
 try:
-    timeData = datetime.strptime(yourDateTime, '%Y-%m-%d %H:%M:%S')
+    timeData = datetime.strptime(yourDateTime, '%Y-%m-%d %H:%M:%S.%f')
 except Exception as err:
     sys.exit('There is an error with your input -\n ' + str(err))
 
