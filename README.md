@@ -1,6 +1,6 @@
 # DTtoEpoch
 
-Python script to convert a date-time to Epoch milliseconds.
+Python script to convert a date-time to Unix Epoch in milliseconds.
 
 This is useful when searching through database fields that use the Epoch timestamp and your database browser does not convert
 the timestamp.
