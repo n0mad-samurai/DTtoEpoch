@@ -29,6 +29,9 @@ print('using this format: 2014-01-26 23:44:15.380')
 
 # assign input to object
 yourDateTime = (input('Enter your UTC date-time:\n'))
+# Epoch to Date-Time
+# yourEpochTime = (input('Enter your UTC epoch in milliseconds:\n'))
+# etMilli = yourEpochTime / 1000
 
 # strip data from user input
 # assign data to another object
@@ -46,4 +49,6 @@ print('The Unix epoch is:', int((timeData - datetime(1970, 1, 1)).total_seconds(
 # or use this alternate formula
 # ensure the timezone is UTC for the epoch display
 # print('The Unix epoch is:', int(timeData.replace(tzinfo=timezone.utc).timestamp() * 1000))
+# Epoch to Date-Time
+# print('The date-time is:', datetime.datetime.utcfromtimestamp(etMilli).strftime('%Y-%m-%d %H:%M:%S.%f'))
 
