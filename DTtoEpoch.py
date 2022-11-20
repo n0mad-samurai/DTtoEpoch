@@ -9,19 +9,12 @@ Epoch milliseconds.
 
 This is useful when searching
 through database fields that
-use the Epoch timestamp such
-as Facebook threads_db2
+use an epoch timestamp
 '''
 '''
 Use the website:
 https://currentmillis.com/
 to confirm results.
-
-This UTC date-time:
-2014-01-26 23:44:15
-converts to 1390779855000.0
-but 1390779855380 is the same
-date-time.'''
 '''
 Python 3.x
 '''
@@ -52,5 +45,5 @@ print('\nYour date-time input was:', yourDateTime, 'UTC')
 print('The Unix epoch is:', int((timeData - datetime(1970, 1, 1)).total_seconds() * 1000))
 # or use this alternate formula
 # ensure the timezone is UTC for the epoch display
-# print('The Unix epoch is:', timeData.replace(tzinfo=timezone.utc).timestamp() * 1000)
+# print('The Unix epoch is:', int(timeData.replace(tzinfo=timezone.utc).timestamp() * 1000))
 
