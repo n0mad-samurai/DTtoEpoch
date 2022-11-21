@@ -12,9 +12,9 @@ options:
 
   -h, --help show this help message and exit
 
-  -e EPOCH, --epoch EPOCH  convert Unix EPOCH milliseconds to date-time format
+  -e EPOCH, --epoch EPOCH, convert Unix EPOCH milliseconds to date-time format
 
-  -t DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...]  convert DATETIME with decimal seconds to Unix epoch format
+  -t DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...], convert DATETIME with decimal seconds to Unix epoch format
 
 You can use both options, -e and -t, in one process
 
