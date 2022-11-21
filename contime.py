@@ -41,7 +41,7 @@ parser = argparse.ArgumentParser(description=INSTRUCTIONS, epilog='You can use b
 
 # cli arguments for verbose option, directory to search, save csv results, save tablular results
 parser.add_argument('-e', '--epoch', type=int, help="option: convert UTC Unix epoch milliseconds to date-time format")
-parser.add_argument('-t', '--DateTime', nargs='+', type=str, help="option: convert UTC date-time with decimal seconds to Unix epoch format")
+parser.add_argument('-t', '--DateTime', type=str, nargs=2, help="option: convert UTC date-time with decimal seconds to Unix epoch format")
 
 # assign selected arguments to an object list
 args = parser.parse_args()
