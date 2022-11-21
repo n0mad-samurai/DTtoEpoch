@@ -59,7 +59,7 @@ else:
     DT = False
     
 if DT is False and EPOCH is False:
-    print('Use either option -e or -t, or both.')
+    print('Use option -e or -t, or both. Option -h for help')
     
 if EPOCH:
     
