@@ -9,8 +9,7 @@ or date time to Unix epoch.
 
 This is useful when searching
 through database fields that
-use the epoch timestamp such
-as Facebook threads_db2
+use the epoch timestamp.
 
 Use the website:
 https://currentmillis.com/
@@ -27,7 +26,7 @@ import argparse
 VERSION = 'v0.20 November 2022'
 
 INSTRUCTIONS = '''
-This a the Unix epoch to date time
+This is a Unix epoch to date time
 or date time to Unix epoch converter.
 Provide your UTC date and time with decimal seconds(up to 6 digits)
 using this format: 2014-01-26 23:44:15.0
@@ -60,7 +59,7 @@ else:
     DT = False
     
 if DT is False and EPOCH is False:
-    print('Use either option -e or -t or both.')
+    print('Use either option -e or -t, or both.')
     
 if EPOCH:
     
