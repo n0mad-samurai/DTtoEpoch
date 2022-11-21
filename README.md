@@ -7,9 +7,9 @@ decimal seconds(up to 6 digits) using this format: 2014-01-26 23:44:15.0 year-mo
 hours:minutes:seconds.000000 or epoch milliseconds (13 digits!) as: 1390779855380
 
 options:
--h, --help show this help message and exit
--e EPOCH, --epoch EPOCH   option: convert Unix epoch milliseconds to date-time format
--t DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...]    option: convert date-time with decimal seconds to Unix epoch format
+  -h, --help show this help message and exit\n
+  -e EPOCH, --epoch EPOCH   option: convert Unix epoch milliseconds to date-time format
+  -t DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...]    option: convert date-time with decimal seconds to Unix epoch format
 
 You can use both options, -e and -t, in one process
 
