@@ -10,11 +10,11 @@ or epoch milliseconds (13 digits!) as: 1390779855380
 
 options:
 
--h, --help show this help message and exit
+  -h, --help show this help message and exit
 
--e EPOCH, --epoch EPOCH   convert Unix EPOCH milliseconds to date-time format
+  -e EPOCH, --epoch EPOCH   convert Unix EPOCH milliseconds to date-time format
 
--t DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...]    option: convert DATETIME with decimal seconds to Unix epoch format
+  -t DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...]    option: convert DATETIME with decimal seconds to Unix epoch format
 
 You can use both options, -e and -t, in one process
 
