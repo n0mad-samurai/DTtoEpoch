@@ -46,7 +46,7 @@ parser = argparse.ArgumentParser(description=INSTRUCTIONS, epilog='You can use b
 
 # cli arguments for verbose option, directory to search, save csv results, save tablular results
 parser.add_argument('-ep', '--epoch', type=float, help="option: convert UTC numeric timestamp to UTC date time format")
-parser.add_argument('-dt', '--DateTime', type=str, nargs=2, help="option: convert UTC date time to UTC numeric format")
+parser.add_argument('-dt', '--DateTime', type=str, nargs=2, help="option: convert UTC date time format to UTC numeric timestamp")
 parser.add_argument('-tt', '--TimeType', type=str, help="option: u = Unix epoch conversion, i = iOS Absolute Time conversion")
 
 # assign selected arguments to an object list
