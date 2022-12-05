@@ -20,7 +20,7 @@ options:
 
   -dt DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...], convert DATETIME with decimal seconds to Unix epoch format
   
-  --tt TIMETYPE, --TimeType TIMETYPE, u = Unix epoch conversion, i = iOS Absolute Time conversion
+  --tt TIMETYPE, --TimeType TIMETYPE, options: u = Unix epoch conversion, i = iOS Absolute Time conversion
 
 You can use both options, -ep and -dt, in one process
 
