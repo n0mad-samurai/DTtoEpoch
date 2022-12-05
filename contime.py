@@ -42,7 +42,7 @@ TimeType option 'i' is iOS Absolute Time conversion.
 # define the cli method
 
 # create an object to capture cli argument definitions
-parser = argparse.ArgumentParser(description=INSTRUCTIONS, epilog='You can use both options, -e and -t, in one process')
+parser = argparse.ArgumentParser(description=INSTRUCTIONS, epilog='You can use both options, -ep and -dt, in one process')
 
 # cli arguments for verbose option, directory to search, save csv results, save tablular results
 parser.add_argument('-ep', '--epoch', type=float, help="option: convert UTC Unix epoch milliseconds to UTC date-time format")
