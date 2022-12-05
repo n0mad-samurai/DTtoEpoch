@@ -16,9 +16,9 @@ options:
 
   -h, --help show this help message and exit
 
-  -ep EPOCH, --epoch EPOCH, convert Unix EPOCH milliseconds to date-time format
+  -ep EPOCH, --epoch EPOCH, convert UTC numeric timestamp to UTC date time format
 
-  -dt DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...], convert DATETIME with decimal seconds to Unix epoch format
+  -dt DATETIME [DATETIME ...], --DateTime DATETIME [DATETIME ...], convert UTC date time format to UTC numeric timestamp
   
   --tt TIMETYPE, --TimeType TIMETYPE, options: u = Unix epoch conversion, i = iOS Absolute Time conversion
 
